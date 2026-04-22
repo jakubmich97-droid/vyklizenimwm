@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
     <header class="site-header" id="top">
       <div class="container nav-wrap">
         <a href="#top" class="brand" aria-label="Vyklízení MWM domů">
@@ -32,13 +35,14 @@
           <a href="#sluzby">Služby</a>
           <a href="#proces">Jak to funguje</a>
           <a href="#proc-my">Proč my</a>
+          <a href="#kalkulace">Kalkulace</a>
           <a href="#kontakt" class="btn btn-nav">Kontakt</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero reveal">
         <div class="container hero-grid">
           <div>
             <p class="eyebrow">Profesionální vyklízení v Praze a okolí</p>
@@ -58,7 +62,7 @@
             </ul>
           </div>
 
-          <aside class="hero-card" aria-label="Rychlé shrnutí služeb">
+          <aside class="hero-card">
             <h2>Co zvládneme</h2>
             <ul>
               <li>Vyklízení bytů a domů</li>
@@ -72,24 +76,47 @@
         </div>
       </section>
 
+      <section class="container stats reveal" aria-label="Hlavní čísla společnosti">
+        <article>
+          <strong class="counter" data-target="500" data-suffix="+">0</strong>
+          <span>realizovaných zakázek</span>
+        </article>
+        <article>
+          <strong class="counter" data-target="98" data-suffix="%">0</strong>
+          <span>spokojených klientů</span>
+        </article>
+        <article>
+          <strong class="counter" data-target="24" data-suffix="h">0</strong>
+          <span>první reakce na poptávku</span>
+        </article>
+        <article>
+          <strong class="counter" data-target="7" data-suffix=" dní">0</strong>
+          <span>provoz každý týden</span>
+        </article>
+      </section>
+
       <section class="section" id="sluzby">
-        <div class="container">
+        <div class="container reveal">
           <p class="eyebrow">Služby</p>
           <h2>Komplexní vyklízecí servis</h2>
           <div class="cards">
             <article class="card">
+              <span class="card-icon" aria-hidden="true">🏠</span>
               <h3>Byty a domy</h3>
               <p>Rychlé vyklízení po stěhování, rekonstrukci i před prodejem nemovitosti.</p>
             </article>
             <article class="card">
+              <span class="card-icon" aria-hidden="true">🤝</span>
               <h3>Pozůstalosti</h3>
               <p>Citlivý přístup, diskrétnost a kompletní zajištění vyklízení včetně třídění.</p>
             </article>
             <article class="card">
+              <span class="card-icon" aria-hidden="true">🏢</span>
               <h3>Firmy a kanceláře</h3>
               <p>Demontáž nábytku, odvoz vybavení a předání prostoru připraveného k využití.</p>
             </article>
             <article class="card">
+              <span class="card-icon" aria-hidden="true">🚚</span>
               <h3>Půdy, sklepy, garáže</h3>
               <p>Vyklidíme i těžce dostupné prostory a odvezeme nepotřebný materiál.</p>
             </article>
@@ -98,7 +125,7 @@
       </section>
 
       <section class="section section-alt" id="proces">
-        <div class="container">
+        <div class="container reveal">
           <p class="eyebrow">Jak to funguje</p>
           <h2>3 kroky k čistému prostoru</h2>
           <div class="steps">
@@ -122,7 +149,7 @@
       </section>
 
       <section class="section" id="proc-my">
-        <div class="container why-us">
+        <div class="container why-us reveal">
           <div>
             <p class="eyebrow">Proč MWM</p>
             <h2>Spolehlivý partner pro vyklízení</h2>
@@ -139,14 +166,63 @@
         </div>
       </section>
 
+      <section class="section section-alt" id="kalkulace">
+        <div class="container estimator reveal">
+          <div>
+            <p class="eyebrow">Interaktivní kalkulace</p>
+            <h2>Rychlý orientační odhad ceny</h2>
+            <p>
+              Posuňte plochu a zvolte typ prostoru. Ihned uvidíte orientační cenu. Přesnou nabídku vám
+              pošleme po krátké konzultaci.
+            </p>
+          </div>
+          <form class="estimator-form" aria-label="Kalkulátor ceny">
+            <label>
+              Typ prostoru
+              <select id="spaceType" name="spaceType">
+                <option value="85">Byt / dům</option>
+                <option value="95">Kancelář / firma</option>
+                <option value="75">Sklep / půda / garáž</option>
+              </select>
+            </label>
+            <label>
+              Plocha (m²): <strong id="spaceValue">40</strong>
+              <input id="spaceRange" type="range" min="10" max="220" value="40" />
+            </label>
+            <output class="estimate-output" id="estimateOutput">Orientačně: 3 400 Kč</output>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container faq reveal">
+          <p class="eyebrow">Časté dotazy</p>
+          <h2>Na co se ptáte nejčastěji</h2>
+          <details>
+            <summary>Jak rychle můžete začít?</summary>
+            <p>Ve většině případů nabízíme termín do 24–48 hodin od potvrzení objednávky.</p>
+          </details>
+          <details>
+            <summary>Pomůžete i s těžkým nábytkem a sutinou?</summary>
+            <p>Ano, máme zkušený tým i techniku na těžké kusy, demontáže a odvoz stavebního odpadu.</p>
+          </details>
+          <details>
+            <summary>Provádíte ekologickou likvidaci odpadu?</summary>
+            <p>
+              Ano, odpad třídíme a odvážíme na sběrné dvory a autorizovaná místa v souladu s předpisy.
+            </p>
+          </details>
+        </div>
+      </section>
+
       <section class="section cta" id="kontakt">
-        <div class="container cta-wrap">
+        <div class="container cta-wrap reveal">
           <div>
             <p class="eyebrow">Kontakt</p>
             <h2>Chcete vědět cenu vyklízení?</h2>
             <p>Ozvěte se nám. Odpovíme co nejdříve a navrhneme nejlepší řešení na míru.</p>
           </div>
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" id="contactForm" action="#" method="post">
             <label>
               Jméno
               <input type="text" name="name" placeholder="Vaše jméno" required />
@@ -160,6 +236,7 @@
               <textarea name="message" rows="4" placeholder="Co potřebujete vyklidit?"></textarea>
             </label>
             <button type="submit" class="btn btn-primary">Odeslat poptávku</button>
+            <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
