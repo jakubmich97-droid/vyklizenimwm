@@ -1,0 +1,12 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#c9c9c9"/>
+  <rect x="80" y="120" width="1040" height="500" rx="18" fill="#e3e3e3" stroke="#696969" stroke-width="5"/>
+  <rect x="120" y="430" width="930" height="150" fill="#8a8a8a" rx="14"/>
+  <g fill="#676767">
+    <rect x="170" y="260" width="180" height="130" rx="8"/>
+    <rect x="390" y="260" width="180" height="130" rx="8"/>
+    <rect x="610" y="260" width="180" height="130" rx="8"/>
+    <rect x="830" y="260" width="180" height="130" rx="8"/>
+  </g>
+  <text x="90" y="95" font-size="44" font-family="Inter, Arial" fill="#202020">PŘED: Kancelář před vyklizením</text>
+</svg>

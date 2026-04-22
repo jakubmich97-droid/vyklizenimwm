@@ -1,0 +1,15 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f3ead1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="80" y="130" width="1040" height="480" rx="24" fill="#fffef9" stroke="#c8a64b" stroke-width="4"/>
+  <rect x="140" y="430" width="220" height="120" rx="10" fill="#f8f2e3"/>
+  <rect x="400" y="430" width="200" height="120" rx="10" fill="#f8f2e3"/>
+  <rect x="740" y="430" width="220" height="120" rx="10" fill="#f8f2e3"/>
+  <line x1="120" y1="380" x2="1080" y2="380" stroke="#e2d5b3" stroke-width="6"/>
+  <text x="90" y="95" font-size="46" font-family="Inter, Arial" fill="#151515">PO: Uklizený byt</text>
+</svg>

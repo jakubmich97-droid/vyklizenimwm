@@ -1,0 +1,8 @@
+<svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="300" fill="#ffffff"/>
+  <path d="M80 210V110L170 50L230 90" stroke="#C8A64B" stroke-width="10" fill="none"/>
+  <path d="M190 210V120L340 30L490 120" stroke="#0F1B2E" stroke-width="10" fill="none"/>
+  <path d="M190 210H460" stroke="#0F1B2E" stroke-width="10"/>
+  <text x="330" y="165" fill="#C8A64B" font-size="110" font-family="Georgia, Times, serif" font-weight="500">MWM</text>
+  <text x="500" y="220" fill="#0F1B2E" font-size="70" font-family="Trajan Pro, Georgia, serif" letter-spacing="10">ESTATE</text>
+</svg>

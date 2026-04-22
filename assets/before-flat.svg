@@ -1,0 +1,23 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d7d7d7"/>
+      <stop offset="1" stop-color="#b8b8b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="80" y="130" width="1040" height="480" rx="24" fill="#ececec" stroke="#767676" stroke-width="4"/>
+  <g fill="#7b7b7b">
+    <rect x="140" y="430" width="200" height="120" rx="10"/>
+    <rect x="370" y="400" width="260" height="150" rx="10"/>
+    <rect x="670" y="450" width="180" height="100" rx="10"/>
+    <rect x="880" y="390" width="160" height="160" rx="10"/>
+  </g>
+  <g fill="#5f5f5f" opacity="0.75">
+    <circle cx="280" cy="320" r="40"/>
+    <circle cx="500" cy="300" r="55"/>
+    <circle cx="760" cy="340" r="45"/>
+    <circle cx="930" cy="300" r="40"/>
+  </g>
+  <text x="90" y="95" font-size="46" font-family="Inter, Arial" fill="#2d2d2d">PŘED: Zanesený byt</text>
+</svg>

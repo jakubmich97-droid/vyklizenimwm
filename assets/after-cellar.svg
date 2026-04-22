@@ -1,0 +1,10 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#fbf8ef"/>
+  <rect x="60" y="80" width="1080" height="560" rx="22" fill="#fffdf6" stroke="#c8a64b" stroke-width="5"/>
+  <g stroke="#d8c59a" stroke-width="8">
+    <line x1="110" y1="230" x2="1090" y2="230"/>
+    <line x1="110" y1="290" x2="1090" y2="290"/>
+  </g>
+  <rect x="150" y="410" width="900" height="170" fill="#f3e8cc" rx="14"/>
+  <text x="90" y="60" font-size="44" font-family="Inter, Arial" fill="#151515">PO: Čistý a volný sklep</text>
+</svg>
