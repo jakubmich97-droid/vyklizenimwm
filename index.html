@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vyklízení MWM – rychlé, spolehlivé a ekologické vyklízení bytů, domů, kanceláří i půd v Praze a okolí."
+    />
+    <title>Vyklízení MWM | Profesionální vyklízecí servis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Vyklízení MWM domů">
+          <span class="brand-mark">MWM</span>
+          <span>Vyklízení</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+
+        <nav class="menu" id="menu" aria-label="Hlavní navigace">
+          <a href="#sluzby">Služby</a>
+          <a href="#kalkulace">Kalkulace</a>
+          <a href="#reference">Reference</a>
+          <a href="#faq">FAQ</a>
+          <a href="#kontakt" class="btn btn-nav">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Profesionální vyklízení v Praze a okolí</p>
+            <h1>Profesionální a vřelý servis, když potřebujete vyklidit bez stresu</h1>
+            <p class="lead">
+              Vyklidíme byt, dům, sklep i kancelář rychle, čistě a s lidským přístupem. Dostanete
+              jasnou cenu předem, spolehlivý tým a legální ekologickou likvidaci.
+            </p>
+            <div class="hero-actions">
+              <a href="#kontakt" class="btn btn-primary">Nezávazná poptávka</a>
+              <a href="tel:+420777123456" class="btn btn-secondary">Zavolejte: 777 123 456</a>
+            </div>
+            <ul class="highlights">
+              <li>Do 24 h od poptávky</li>
+              <li>Pojištěný tým</li>
+              <li>Ekologická likvidace</li>
+            </ul>
+          </div>
+
+          <aside class="hero-card" aria-label="Rychlé shrnutí služeb">
+            <h2>Důvěřují nám klienti</h2>
+            <div class="stat-grid">
+              <article><strong data-counter="500" data-suffix="+">0</strong><span>realizací</span></article>
+              <article><strong data-counter="98" data-suffix="%">0</strong><span>% spokojenost</span></article>
+              <article><strong data-counter="7" data-suffix="">0</strong><span>dní v týdnu</span></article>
+              <article><strong data-counter="24" data-suffix="h">0</strong><span>h reakce</span></article>
+            </div>
+            <a href="#reference" class="text-link">Podívat se na reference →</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="sluzby">
+        <div class="container">
+          <p class="eyebrow">Služby</p>
+          <h2>Komplexní vyklízecí servis</h2>
+
+          <div class="filter-row" role="tablist" aria-label="Filtr služeb">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Vše</button>
+            <button class="chip" data-filter="domacnost" role="tab" aria-selected="false">Domácnosti</button>
+            <button class="chip" data-filter="firma" role="tab" aria-selected="false">Firmy</button>
+            <button class="chip" data-filter="special" role="tab" aria-selected="false">Speciální</button>
+          </div>
+
+          <div class="cards" id="serviceCards">
+            <article class="card" data-category="domacnost">
+              <h3>Byty a domy</h3>
+              <p>Rychlé vyklízení po stěhování, rekonstrukci i před prodejem nemovitosti.</p>
+            </article>
+            <article class="card" data-category="special">
+              <h3>Pozůstalosti</h3>
+              <p>Citlivý přístup, diskrétnost a kompletní zajištění vyklízení včetně třídění.</p>
+            </article>
+            <article class="card" data-category="firma">
+              <h3>Firmy a kanceláře</h3>
+              <p>Demontáž nábytku, odvoz vybavení a předání prostoru připraveného k využití.</p>
+            </article>
+            <article class="card" data-category="domacnost special">
+              <h3>Půdy, sklepy, garáže</h3>
+              <p>Vyklidíme i těžce dostupné prostory a odvezeme nepotřebný materiál.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="kalkulace">
+        <div class="container estimator">
+          <div>
+            <p class="eyebrow">Interaktivní kalkulace</p>
+            <h2>Rychlý odhad ceny vyklízení</h2>
+            <p>Nastavte přibližnou velikost prostoru. Přesnou cenu vždy potvrdíme po konzultaci.</p>
+          </div>
+          <div class="estimate-card">
+            <label for="sizeRange">Velikost prostoru (m²)</label>
+            <input id="sizeRange" type="range" min="10" max="200" step="5" value="60" />
+            <p><strong id="sizeValue">60 m²</strong></p>
+            <p>Odhad ceny: <strong id="priceValue">4 700 Kč</strong></p>
+            <small>Bez skrytých poplatků. Doprava a likvidace dle rozsahu zakázky.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reference">
+        <div class="container">
+          <p class="eyebrow">Reference</p>
+          <h2>Co o nás říkají klienti</h2>
+          <div class="testimonial-wrap">
+            <article class="testimonial is-visible">
+              <p>„Skvělá komunikace, rychlý termín a perfektně odvedená práce. Doporučuji.“</p>
+              <strong>Jana K., Praha 4</strong>
+            </article>
+            <article class="testimonial">
+              <p>„Vyklidili nám kanceláře během víkendu, v pondělí jsme mohli fungovat dál.“</p>
+              <strong>Tomáš R., office manager</strong>
+            </article>
+            <article class="testimonial">
+              <p>„Profesionální přístup a férová cena přesně podle domluvy. Velká spokojenost.“</p>
+              <strong>Michal V., Praha-západ</strong>
+            </article>
+            <div class="dots" aria-label="Přepínání referencí">
+              <button class="dot is-active" data-slide="0" aria-label="Reference 1"></button>
+              <button class="dot" data-slide="1" aria-label="Reference 2"></button>
+              <button class="dot" data-slide="2" aria-label="Reference 3"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <p class="eyebrow">FAQ</p>
+          <h2>Časté dotazy</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Jak rychle můžete přijet?</summary>
+              <p>Ve většině případů nabídneme termín do 24–48 hodin od potvrzení poptávky.</p>
+            </details>
+            <details>
+              <summary>Co když je potřeba demontáž nábytku?</summary>
+              <p>Demontáž i odnos těžkých kusů je součástí služby, včetně bezpečného odvozu.</p>
+            </details>
+            <details>
+              <summary>Likvidujete odpad legálně?</summary>
+              <p>Ano, odpad třídíme a předáváme na oficiální sběrná místa dle platných pravidel.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" id="kontakt">
+        <div class="container cta-wrap">
+          <div>
+            <p class="eyebrow">Kontakt</p>
+            <h2>Pošlete poptávku a ozveme se vám</h2>
+            <p>Stačí krátký popis a telefon. Odpověď obvykle do jedné hodiny během pracovní doby.</p>
+          </div>
+          <form class="contact-form" id="contactForm" action="#" method="post">
+            <label>
+              Jméno
+              <input type="text" name="name" placeholder="Vaše jméno" required />
+            </label>
+            <label>
+              Telefon
+              <input type="tel" name="phone" placeholder="+420..." required />
+            </label>
+            <label>
+              Co potřebujete vyklidit?
+              <textarea name="message" rows="4" placeholder="Byt 2+kk, sklep, kancelář..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Odeslat poptávku</button>
+            <p id="formNotice" class="form-notice" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-cta" href="tel:+420777123456" aria-label="Rychlé zavolání">
+      Zavolat
+    </a>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Vyklízení MWM. Všechna práva vyhrazena.</p>
+        <a href="#top">Zpět nahoru ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
