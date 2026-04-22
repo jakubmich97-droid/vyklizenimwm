@@ -3,7 +3,6 @@ const menu = document.getElementById("menu");
 const year = document.getElementById("year");
 const counters = document.querySelectorAll(".counter");
 const reveals = document.querySelectorAll(".reveal");
-const compares = document.querySelectorAll("[data-compare]");
 const spaceType = document.getElementById("spaceType");
 const spaceRange = document.getElementById("spaceRange");
 const spaceValue = document.getElementById("spaceValue");
@@ -76,23 +75,6 @@ if (counters.length > 0) {
 
   counters.forEach((counter) => counterObserver.observe(counter));
 }
-
-compares.forEach((compare) => {
-  const range = compare.querySelector(".compare-range");
-  const after = compare.querySelector(".compare-after");
-  const line = compare.querySelector(".compare-line");
-
-  if (!range || !after || !line) return;
-
-  const updateCompare = () => {
-    const value = Number(range.value);
-    after.style.width = `${value}%`;
-    line.style.left = `${value}%`;
-  };
-
-  range.addEventListener("input", updateCompare);
-  updateCompare();
-});
 
 const formatCzk = (value) =>
   new Intl.NumberFormat("cs-CZ", {
